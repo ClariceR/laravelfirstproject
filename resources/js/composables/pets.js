@@ -36,7 +36,7 @@ export default function usePets() {
     const updatePet = async (id) => {
         errors.value = ''
         try {
-            await axios.patch(`/api/pets/${id}`, pet.value)
+            await axios.put(`/api/pets/${id}`, pet.value)
             await router.push({ name: 'pets.index'})
         } catch (e) {
             if (e.response.status === 422) {

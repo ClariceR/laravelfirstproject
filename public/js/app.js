@@ -25413,7 +25413,7 @@ function usePets() {
               errors.value = '';
               _context4.prev = 1;
               _context4.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_2___default().patch("/api/pets/".concat(id), pet.value);
+              return axios__WEBPACK_IMPORTED_MODULE_2___default().put("/api/pets/".concat(id), pet.value);
 
             case 4:
               _context4.next = 6;
